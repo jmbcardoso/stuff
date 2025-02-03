@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>cool button</title>
+  <meta name="description" content="The HTML5">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+ <p>Here is your button Maffews.</p>
+	<button id="button" onclick="push()" onmouseover="dinky()">Push me!</button> 
+	<p id="demo"></p>
+
+	
+	<!-- add an h1 tag here and add an id -->
+	<script>
+	
+		function push(){
+			<!-- Use a query selector to target the h1 tag by its id, and add innerHTML -->
+			document.getElementById("demo").innerHTML = 'Good Job!';
+		} 
+		function dinky(){
+		button.style.position = 'absolute';
+		button.style.top = Math.floor(Math.random()*90+5)+'%';
+		button.style.left = Math.floor(Math.random()*90+5)+'%';
+		}
+
+	</script>
+	
+	<!-- Add a style tag here -->
+	<style>
+
+	button {
+  background-color: #33B8FF; /* Blue */
+  border: none; 
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; 
+  text-align: center;
+  outline: none;
+  left:45%;
+  top:40%;
+  position:absolute;
+  transition: .75s top, .57s left;
+  
+}
+
+	</style>
+	<!-- then use css to make the button a blue circle -->
+</body>
+</html>
